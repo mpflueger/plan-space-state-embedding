@@ -1,0 +1,19 @@
+seed: 1
+
+data_dir: "../data/reacher_limited/smoothed"
+state_select: [0,1,4,5]
+state_shape: [4]
+time_select: 10
+steps: [1, 3, 5, 10, 30]
+batch_size: 50
+learning_rate: 0.001 # default
+
+state_embedding_hypers:
+  z_dim: 3
+  increase_zhat_sigma: True
+  KL_lambda: 0.5
+  estimator_version: B
+  optimizer: adam
+  # optimizer: rmsprop
+epochs: 4000
+

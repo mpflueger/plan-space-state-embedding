@@ -1,0 +1,19 @@
+type: ppo_reacher_raw_embedded_augment_lowz
+seed: 1
+use_state_embedding: True
+augment_embedded_state: True
+model_dir: '../models/reacher_limited/lowz_train_2'
+
+env_params:
+  obs_theta: True
+  obs_trig: False
+  obs_target: True
+
+algo: PPO
+algo_params:
+  max_path_length: 100
+  discount: 0.99
+policy_hidden_sizes: [32, 32]
+epochs: 2000
+batch_size: 4000
+

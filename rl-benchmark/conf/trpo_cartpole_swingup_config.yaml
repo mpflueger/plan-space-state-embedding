@@ -1,0 +1,16 @@
+type: trpo_cartpole_swingup
+seed: 1
+swingup: True
+swingup_reward_version: 4
+use_state_embedding: False
+augment_embedded_state: False
+model_dir: None
+
+algo: TRPO
+algo_params:
+  discount: 0.99
+  max_kl_step: 0.01
+  max_path_length: 200
+policy_hidden_sizes: [32, 32]
+batch_size: 4000
+epochs: 2000

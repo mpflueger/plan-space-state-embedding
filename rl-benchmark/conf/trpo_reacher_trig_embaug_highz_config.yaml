@@ -1,0 +1,17 @@
+type: trpo_reacher_embedded_augment_highz
+use_state_embedding: True
+augment_embedded_state: True
+model_dir: '../models/reacher_limited/highz_train_3'
+env_params:
+  obs_theta: False
+  obs_trig: True
+  obs_target: True
+algo: TRPO
+algo_params:
+  max_path_length: 100
+  discount: 0.99
+  max_kl_step: 0.01
+policy_hidden_sizes: [32, 32]
+epochs: 2000
+batch_size: 4000
+

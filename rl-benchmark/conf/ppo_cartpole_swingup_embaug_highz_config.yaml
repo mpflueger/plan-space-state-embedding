@@ -1,0 +1,16 @@
+type: ppo_cartpole_swingup_embedded_augment_highz
+seed: 1
+swingup: True
+swingup_reward_version: 4
+use_state_embedding: True
+augment_embedded_state: True
+model_dir: '../models/cartpole/highz_train_0'
+
+algo: PPO
+algo_params:
+  max_path_length: 200
+  discount: 0.99
+policy_hidden_sizes: [32, 32]
+epochs: 2000
+batch_size: 4000
+

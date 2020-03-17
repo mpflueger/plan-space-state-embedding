@@ -1,0 +1,12 @@
+goal: [0, 0, 0, 0]
+mujoco_config: cartpole_swingup.xml
+planner: sst
+sst_pruning_radius: 0.0005
+sst_selection_radius: 0.002
+start: [0, 3.14, 0, 0]
+start_range:
+- [-0.2, 0.2]
+- [-3.14, 3.14]
+- [-0.1, 0.1]
+- [-0.1, 0.1]
+time_limit: 30.0

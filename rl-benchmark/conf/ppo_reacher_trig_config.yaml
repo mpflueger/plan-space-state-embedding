@@ -1,0 +1,19 @@
+type: ppo_reacher_trig
+seed: 1
+use_state_embedding: False
+augment_embedded_state: False
+model_dir: None
+
+env_params:
+  obs_theta: False
+  obs_trig: True
+  obs_target: True
+
+algo: PPO
+algo_params:
+  max_path_length: 100
+  discount: 0.99
+policy_hidden_sizes: [32, 32]
+epochs: 2000
+batch_size: 4000
+

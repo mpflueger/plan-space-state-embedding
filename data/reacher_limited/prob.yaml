@@ -1,0 +1,16 @@
+goal: [0, 1.57, 0.1, 0.1, 0, 0, 0, 0]
+mujoco_config: reacher_limited.xml
+planner: sst
+sst_pruning_radius: 0.0005
+sst_selection_radius: 0.002
+start: [0, 0, 0.1, 0.1, 0, 0, 0, 0]
+start_range:
+- [-3.14, 3.14]
+- [-3, 3]
+- [0.1, 0.1]
+- [0.1, 0.1]
+- [-0.1, 0.1]
+- [-0.1, 0.1]
+- [0, 0]
+- [0, 0]
+time_limit: 300.0

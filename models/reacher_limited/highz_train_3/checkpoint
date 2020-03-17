@@ -1,0 +1,2 @@
+model_checkpoint_path: "/data/max/tf-log/psse/reacher/highz/train_3/model_latest.ckpt"
+all_model_checkpoint_paths: "/data/max/tf-log/psse/reacher/highz/train_3/model_latest.ckpt"
